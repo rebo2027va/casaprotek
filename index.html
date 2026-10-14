@@ -10,7 +10,7 @@
 
   <!-- Encabezado -->
   <header>
-    <h1>Casaprotek</h1>
+    <h1>Casaprotek <span class="brand-subtitle">una empresa Fival</span></h1>
     <nav>
       <a href="#servicios">Servicios</a>
       <a href="#galeria">Trabajos Reales</a>
@@ -19,11 +19,21 @@
   </header>
 
   <!-- Portada Principal -->
-  <section class="hero">
-    <h2>Protección y Aislamiento para tu Hogar</h2>
-    <p>Especialistas en Ventanas de PVC con Termopanel, Láminas de Seguridad y Protecciones Metálicas.</p>
-    <!-- CAMBIA EL NÚMERO DE TELÉFONO ABAJO POR EL TUYO (con 569...) -->
-    <a href="https://wa.me/56912345678?text=Hola,%20quiero%20cotizar%20un%20servicio" class="btn-wsp" target="_blank">Cotizar por WhatsApp</a>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Casaprotek <span>·</span> Seguridad y confort</p>
+      <h2 id="hero-title">Más seguridad. <span>Más confort.</span></h2>
+      <p class="hero-description">Mejoramos tus espacios con ventanas de PVC termopanel, láminas de seguridad y protecciones metálicas hechas a tu medida.</p>
+      <!-- CAMBIA EL NÚMERO DE TELÉFONO ABAJO POR EL TUYO (con 569...) -->
+      <div class="hero-actions">
+        <a href="https://wa.me/56997177217?text=Hola,%20quiero%20cotizar%20un%20servicio" class="btn-wsp" target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp <span aria-hidden="true">↗</span></a>
+        <a class="hero-secondary-link" href="#servicios">Conocer servicios <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="Imagenes/pvc-9.jpg" alt="Ventana de PVC con vista al jardín" fetchpriority="high">
+      <p class="hero-image-caption"><span aria-hidden="true">●</span> Instalaciones pensadas para durar</p>
+    </div>
   </section>
 
   <!-- Servicios -->
@@ -45,15 +55,78 @@
     </div>
   </section>
 
+  <!-- Como trabajamos -->
+  <section id="como-trabajamos" class="contenedor proceso">
+    <h2>Cómo trabajamos</h2>
+    <div class="proceso-recorrido">
+      <ol class="proceso-grid" aria-label="Etapas del proceso">
+        <li class="proceso-paso">
+          <h3>Contacto</h3>
+          <p>Nos cuentas qué necesitas y qué dudas tienes.</p>
+        </li>
+        <li class="proceso-paso">
+          <h3>Nos envías tus medidas</h3>
+          <p>Con ellas te enviamos una valorización bastante aproximada, junto con nuestras sugerencias.</p>
+        </li>
+        <li class="proceso-paso">
+          <h3>Cotización detallada</h3>
+          <p>Recibes un presupuesto claro, sin valores ocultos, en menos de 48 horas.</p>
+        </li>
+        <li class="proceso-paso">
+          <h3>Aceptación del presupuesto</h3>
+          <p>Una vez aceptado, rectificamos las medidas en terreno.</p>
+        </li>
+        <li class="proceso-paso">
+          <h3>Producción de ventanas</h3>
+          <p>Fabricamos con normas de calidad y personal con experiencia.</p>
+        </li>
+        <li class="proceso-paso">
+          <h3>Instalación</h3>
+          <p>Instalamos tus ventanas para completar el proyecto.</p>
+        </li>
+      </ol>
+    </div>
+    <p class="proceso-plazo"><strong>Plazo estimado:</strong> todo el proceso tarda entre 15 y 20 días.</p>
+  </section>
+
   <!-- Galería de Fotos Reales -->
   <section id="galeria" class="contenedor">
     <h2>Nuestros Trabajos Reales</h2>
     <p>Echa un vistazo a nuestras instalaciones terminadas:</p>
-    <div class="galeria-grid">
-      <!-- CAMBIA LOS NOMBRES DE LAS IMÁGENES POR LOS TUYOS -->
-      <img src="imagenes/ventana-pvc-1.jpg" alt="Instalación de Ventana PVC">
-      <img src="imagenes/lamina-seguridad.jpg" alt="Lámina de Seguridad">
-      <img src="imagenes/proteccion-metal.jpg" alt="Protección Metálica">
+    <div class="galeria-grupo">
+      <h3>Ventanas PVC</h3>
+      <div class="galeria-grid">
+        <img src="Imagenes/pvc-22.jpg" alt="Ventana PVC 22" loading="lazy">
+        <img src="Imagenes/pvc-20.jpg" alt="Ventana PVC 20" loading="lazy">
+        <img src="Imagenes/pvc-19.jpg" alt="Ventana PVC 19" loading="lazy">
+        <img src="Imagenes/pvc-18.jpg" alt="Ventana PVC 18" loading="lazy">
+        <img src="Imagenes/pvc-17.jpg" alt="Ventana PVC 17" loading="lazy">
+        <img src="Imagenes/pvc-15.jpg" alt="Ventana PVC 15" loading="lazy">
+        <img src="Imagenes/pvc-14.jpg" alt="Ventana PVC 14" loading="lazy">
+        <img src="Imagenes/pvc-13.jpg" alt="Ventana PVC 13" loading="lazy">
+        <img src="Imagenes/pvc-11.jpg" alt="Ventana PVC 11" loading="lazy">
+        <img src="Imagenes/pvc-10.jpg" alt="Ventana PVC 10" loading="lazy">
+        <img src="Imagenes/pvc-5.jpg" alt="Ventana PVC 5" loading="lazy">
+        <img src="Imagenes/pvc-1.JPG" alt="Ventana PVC 1" loading="lazy">
+      </div>
+    </div>
+    <div class="galeria-grupo">
+      <h3>Láminas de Seguridad</h3>
+      <div class="galeria-grid">
+        <img src="Imagenes/pvc-7.JPG" alt="Trabajo PVC 7" loading="lazy">
+        <img src="Imagenes/lam-1.jpg" alt="Lámina 1" loading="lazy">
+        <img src="Imagenes/lam-2.jpg" alt="Lámina 2" loading="lazy">
+        <img src="Imagenes/lam-4.jpg" alt="Lámina 4" loading="lazy">
+        <img src="Imagenes/P-Techo.jpg" alt="Techo instalado" loading="lazy">
+      </div>
+    </div>
+    <div class="galeria-grupo">
+      <h3>Protecciones</h3>
+      <div class="galeria-grid">
+        <img src="Imagenes/pro-4.PNG" alt="Protección 4" loading="lazy">
+        <img src="Imagenes/pro-5.PNG" alt="Protección 5" loading="lazy">
+        <img src="Imagenes/Puerta Patio.PNG" alt="Puerta de patio" loading="lazy">
+      </div>
     </div>
   </section>
 
@@ -62,7 +135,7 @@
     <h2>¿Quieres una cotización?</h2>
     <p>Escríbenos directamente y te responderemos a la brevedad.</p>
     <!-- CAMBIA EL NÚMERO DE TELÉFONO ABAJO POR EL TUYO -->
-    <a href="https://wa.me/56912345678?text=Hola,%20quiero%20cotizar%20un%20servicio" class="btn-wsp" target="_blank">Escribir por WhatsApp</a>
+    <a href="https://wa.me/56997177217?text=Hola,%20quiero%20cotizar%20un%20servicio" class="btn-wsp" target="_blank">Escribir por WhatsApp</a>
   </section>
 
   <!-- Pie de página -->
