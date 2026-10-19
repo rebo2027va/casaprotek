@@ -816,6 +816,63 @@ footer p {
     padding: 16px 20px;
   }
 
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 4px 16px;
+  }
+
+  header nav a {
+    padding: 7px 0;
+  }
+
+  header nav .nav-cta {
+    justify-self: start;
+    padding: 6px 12px;
+  }
+
+  .proceso-grid {
+    display: grid;
+    width: 100%;
+    gap: 0;
+    text-align: left;
+  }
+
+  .proceso-grid::before {
+    top: 19px;
+    right: auto;
+    bottom: 20px;
+    left: 18px;
+    width: 2px;
+    height: auto;
+  }
+
+  .proceso-paso {
+    min-height: 0;
+    padding: 0 0 26px 56px;
+  }
+
+  .proceso-paso:last-child {
+    padding-bottom: 0;
+  }
+
+  .proceso-paso::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background: #f4f7f4;
+  }
+
+  .proceso-paso h3 {
+    margin: 4px 0 6px;
+  }
+
   .contacto-contenido {
     grid-template-columns: 1fr;
     gap: 34px;
@@ -835,28 +892,113 @@ footer p {
     padding: 56px 20px;
   }
 
+  .hero {
+    gap: 28px;
+    padding: 42px 20px 36px;
+  }
+
+  .hero h2 {
+    font-size: clamp(2rem, 9vw, 2.6rem);
+    line-height: 1.1;
+  }
+
+  .hero-eyebrow {
+    margin-bottom: 14px;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+  }
+
+  .hero-description {
+    margin: 18px 0 22px;
+    line-height: 1.6;
+  }
+
+  .hero-actions {
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .hero .btn-wsp {
+    align-self: flex-start;
+  }
+
+  .hero-visual {
+    aspect-ratio: 1.2 / 1;
+  }
+
   .confianza {
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
     padding: 18px 20px;
   }
 
   .confianza p {
-    width: 100%;
+    font-size: 0.86rem;
+  }
+
+  .confianza p:last-child {
+    grid-column: 1 / -1;
   }
 
   .tarjeta {
     min-height: 0;
   }
 
+  .galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
   .galeria-grid img {
-    flex-basis: calc(50% - 8px);
-    max-width: calc(50% - 8px);
-    height: 160px;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    aspect-ratio: 1 / 1;
   }
 
   .lead-form {
     padding: 23px 19px;
+  }
+}
+
+@media (max-width: 380px) {
+  header {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  header h1 {
+    font-size: 1.35rem;
+  }
+
+  header nav {
+    gap: 4px 10px;
+  }
+
+  .hero {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .contenedor {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .confianza {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .contacto {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .galeria-grid {
+    gap: 8px;
   }
 }
 
