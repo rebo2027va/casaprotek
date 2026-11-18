@@ -1012,4 +1012,32 @@ footer p {
   *::after {
     transition-duration: 0.01ms !important;
   }
+}/* Realce para tarjeta 04 - Nuevo Desarrollo */
+.tarjeta-destacada {
+  border: 3.5px solid #1b4332;
+  background: linear-gradient(180deg, #eef6f1 0%, #ffffff 100%);
+  box-shadow: 0 12px 28px rgba(27, 67, 50, 0.18);
+}
+
+.tarjeta-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.tarjeta-top .service-number {
+  margin-bottom: 0;
+}
+
+.badge-nuevo {
+  background-color: #1b4332;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  text-transform: uppercase;
 }
